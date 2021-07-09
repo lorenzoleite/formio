@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form.io Reader</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.form.io/formiojs/formio.full.min.css"
+    />
+
+    <link rel="stylesheet" href="/public/global.css" />
+    <link rel="stylesheet" href="/public/reader.css" />
+
+    <script src="https://cdn.form.io/formiojs/formio.full.min.js"></script>
+    <script>
+      var example = {
+        _id: '60dbf37a6c4e02ee73a8116e',
+        type: 'form',
+        tags: [],
+        owner: '60d3665a0e3bdecb69b673b2',
+        components: [
+          {
+            label: 'Text Area',
+            autoExpand: false,
+            tableView: true,
+            key: 'textArea',
+            type: 'textarea',
+            input: true
+          },
+          {
+            label: 'Checkbox',
+            tableView: false,
+            key: 'checkbox',
+            type: 'checkbox',
+            input: true
+          },
+          {
+            type: 'button',
+            label: 'Submit',
+            key: 'submit',
+            disableOnInvalid: true,
+            input: true,
+            tableView: false
+          }
+        ],
+        revisions: '',
+        _vid: 0,
+        title: 'Teste 1',
+        display: 'form',
+        access: [
+          {
+            roles: [
+              '60dbd01577294ae1ff6b7e41',
+              '60dbd01577294a83206b7e42',
+              '60dbd01577294a78ec6b7e43'
+            ],
+            type: 'read_all'
+          }
+        ],
+        submissionAccess: [],
+        controller: '',
+        properties: {},
+        settings: {},
+        name: 'teste1',
+        path: 'teste1',
+        project: '60dbd01577294ac7e86b7e40',
+        created: '2021-06-30T04:30:50.516Z',
+        modified: '2021-06-30T04:30:50.527Z',
+        machineName: 'gbrwhudgbhiraem:teste1'
+      }
+
+      window.onload = function () {
+        Formio.createForm(document.getElementById('formio'), example)
+      }
+    </script>
+  </head>
+  <body>
+    <main>
+      <div id="formio"></div>
+    </main>
+  </body>
+</html>
